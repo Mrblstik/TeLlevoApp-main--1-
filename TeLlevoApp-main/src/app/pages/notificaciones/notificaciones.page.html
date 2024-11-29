@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Notificaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let placeholder of placeholders">
+      <ion-avatar slot="start">
+        <div class="placeholder-avatar"></div>
+      </ion-avatar>
+      <ion-label>
+        <div class="placeholder-text placeholder-title"></div>
+        <div class="placeholder-text placeholder-message"></div>
+        <div class="placeholder-text placeholder-date"></div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

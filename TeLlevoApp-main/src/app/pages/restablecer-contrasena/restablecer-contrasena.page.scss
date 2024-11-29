@@ -1,0 +1,121 @@
+.fondo-restablecer {
+    background-color: var(--ion-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 16px;
+  }
+  
+  .contenedor-restablecer {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tarjeta-restablecer {
+    width: 100%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    background-color: var(--ion-card-background);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .titulo-restablecer {
+    font-size: 1.8rem;
+    color: var(--ion-text-color);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  
+  .subtitulo-restablecer {
+    font-size: 1rem;
+    color: var(--ion-text-color-shade);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .input-container {
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: var(--ion-item-background);
+  }
+  
+  .input-restablecer {
+    font-size: 1rem;
+    padding: 10px;
+    color: var(--ion-text-color);
+  }
+  
+  .icono-input {
+    color: var(--ion-icon-color);
+  }
+  
+  .boton-restablecer {
+    margin-top: 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    --background: var(--ion-color-primary);
+    --background-activated: var(--ion-color-primary-shade);
+    --background-focused: var(--ion-color-primary-tint);
+  }
+  
+  .texto-secundario {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  .enlace {
+    color: var(--ion-color-secondary);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .enlace:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .titulo-restablecer {
+      font-size: 1.5rem;
+    }
+  
+    .subtitulo-restablecer {
+      font-size: 0.9rem;
+    }
+  
+    .tarjeta-restablecer {
+      padding: 16px;
+    }
+  
+    .boton-restablecer {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titulo-restablecer {
+      font-size: 1.2rem;
+    }
+  
+    .subtitulo-restablecer {
+      font-size: 0.8rem;
+    }
+  }
+  
